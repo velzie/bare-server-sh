@@ -76,7 +76,6 @@ listen() {
 
       unset headers
       declare -A headers
-      echo "$headersobj"
       headers[X-Bare-Headers]=$headersobj
       headers[X-Bare-Status]=200
       headers[X-Bare-Status-Text]="OK"
